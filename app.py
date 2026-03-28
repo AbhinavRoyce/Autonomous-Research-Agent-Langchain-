@@ -82,5 +82,5 @@ if st.button("Generate Report"):
             result = agent.run(prompt)
 
         # Display output
-        st.success("✅ Report Generated!")
+        st.success("Report Generated!")
         st.markdown(result)
