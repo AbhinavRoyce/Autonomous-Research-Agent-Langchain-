@@ -13,11 +13,11 @@ load_dotenv()
 
 # Streamlit UI config
 st.set_page_config(page_title="Autonomous Research Agent", page_icon="🤖")
-st.title("🤖 Autonomous Research Agent (Groq + LangChain)")
+st.title("Autonomous Research Agent (Groq + LangChain)")
 st.write("Enter a topic and let the AI research it automatically!")
 
 # Input field
-topic = st.text_input("🔍 Enter Research Topic")
+topic = st.text_input("Enter Research Topic")
 
 # Button
 if st.button("Generate Report"):
@@ -25,7 +25,7 @@ if st.button("Generate Report"):
     if not topic:
         st.warning("Please enter a topic!")
     else:
-        with st.spinner("Researching... please wait ⏳"):
+        with st.spinner("Researching... please wait..."):
 
             # Get API key
             api_key = os.getenv("GROQ_API_KEY")
